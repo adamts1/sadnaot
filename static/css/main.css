@@ -321,6 +321,18 @@ i {
   }
 }
 
+#music {
+  background-color: #8B008B;
+  color: #e4e6e5;
+  padding-top: 90px;
+}
+
+#workshops {
+  background-color: #6495ED;
+  color: #e4e6e5;
+  padding-top: 90px;
+}
+
 #process {
   background-color: #34495e;
   color: #e4e6e5;
