@@ -25,6 +25,7 @@
   <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
 
   <link rel="prefetch" href="{{ url_for('static', filename='img/zoom.png') }}">
+   <script type="text/javascript" src="{{ url_for('static', filename='js/customized.js') }}"></script>
 
   <!-- =======================================================
     Template Name: Munter
@@ -144,7 +145,35 @@
           </h4>
          </div>
       </div><br>
-      <!-- /row -->
+    <!-- /row -->
+        <div class="row" style="padding: 10px;">
+            <img class="mySlides" src="{{ url_for('static', filename='img/1.jpg') }}" style="width:40%;text-align-last: center;display:none">
+            <img class="mySlides" src="{{ url_for('static', filename='img/3.jpg') }}" style="width:40%;text-align-last: center;">
+            <img class="mySlides" src="{{ url_for('static', filename='img/5.jpg') }}" style="width:40%;text-align-last: center; display:none">
+            <img class="mySlides" src="{{ url_for('static', filename='img/6.jpg') }}" style="width:40%; display:none">
+            <img class="mySlides" src="{{ url_for('static', filename='img/7.jpg') }}" style="width:40%;text-align-last: center; display:none">
+            <img class="mySlides" src="{{ url_for('static', filename='img/8.jpg') }}" style="width:40%;text-align-last: center; display:none">
+        </div>
+        <div class="row">
+            <div class="col-sm-2 rtl">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="{{ url_for('static', filename='img/3.jpg') }}" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+            </div>
+            <div class="col-sm-2 rtl">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="{{ url_for('static', filename='img/1.jpg') }}" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+            </div>
+            <div class="col-sm-2 rtl">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="{{ url_for('static', filename='img/5.jpg') }}" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+            </div>
+             <div class="col-sm-2 rtl">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="{{ url_for('static', filename='img/6.jpg') }}" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+            </div>
+             <div class="col-sm-2 rtl">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="{{ url_for('static', filename='img/7.jpg') }}" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+            </div>
+            <div class="col-sm-2 rtl">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="{{ url_for('static', filename='img/8.jpg') }}" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+            </div>
+  </div><br>
      <div class="row line-row">
         <div class="hr">&nbsp;</div>
      </div>
@@ -156,11 +185,20 @@
   <div class="slide story" id="music" data-slide="5">
     <div class="container">
      <div class="row title-row">
-        <div class="col-12 font-thin"><span class="font-semibold">מוזיקה</span></div></div>
-        <br>
-        <h3  dir="rtl" style="text-align: justify;">
+        <div><span class="font-semibold">מוזיקה</span></div>
+     </div>
+     <div class="row title-row">
+         <div class="col-sm-6">
+            <img src="{{ url_for('static', filename='img/music.jpg') }}" style="width:50%;">
+        </div>
+        <div class="col-sm-6">
+          <h3  dir="rtl" style="text-align: justify;">
 מישל גם מוזיקאית וזמרת ז'אז. בוסה נובה, שנסון  צרפתי ועוד. הוא נחשפה למוזיקה ברזילאית בגיל 15 ושרה שירים של קאטנו ולוסו, ויניסיוס דה מוראס, ג'ובים ועוד. בצרפת הייתה בלהקה " ז'אז או ברזיל" למשך 9 שנים וההרכב הופיע בהרבה מועדוני ז'אז ופסטיבלים.
-         </h3>
+          </h3><br>
+          <audio controls>
+                <source src="{{ url_for('static', filename='music/16.mp3') }}" type="audio/mpeg">
+          </audio>
+        </div>
      </div>
      <!-- /row --><br>
     <div class="row line-row">
@@ -187,6 +225,9 @@
          </h3>
      </div>
      <!-- /row --><br>
+     <div class="row" style="padding: 10px;">
+       <img src="{{ url_for('static', filename='img/sadnaot.png') }}" style="width:40%;">
+     </div>
     <div class="row line-row">
         <div class="hr">&nbsp;</div>
     </div>
